@@ -1,0 +1,76 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "文字转语音"
+			}
+		},
+		{
+		    "path" : "pages/user/index",
+		    "style" : {
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+		    "path" : "pages/user/setting",
+		    "style" : {
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+		    "path" : "pages/user/password",
+		    "style" : {
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+		    "path" : "pages/user/sign",
+		    "style" : {
+				"navigationBarTitleText": "签到",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/about/index",
+			"style" : {
+				// #ifdef APP-PLUS
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"buttons": [{
+							"type": "share"
+						}]
+					}
+				}
+				// #endif
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "文字转语音",
+		"navigationBarBackgroundColor": "#3DB3F7",
+		"backgroundColor": "#ffffff"
+	},
+	"tabBar": {
+		"color": "#555555",
+		"selectedColor": "#3DB3F7",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/home-0.png",
+				"selectedIconPath": "static/home-1.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/user/index",
+				"iconPath": "static/user-0.png",
+				"selectedIconPath": "static/user-1.png",
+				"text": "我的"
+			}
+		]
+	}
+}
